@@ -1,19 +1,14 @@
-<?php
-
-$this->breadcrumbs = array(
-	User::label(2),
-	Yii::t('app', 'Index'),
-);
-
-$this->menu = array(
-	array('label'=>Yii::t('app', 'Create') . ' ' . User::label(), 'url' => array('create')),
-	array('label'=>Yii::t('app', 'Manage') . ' ' . User::label(2), 'url' => array('admin')),
-);
-?>
-
-<h1><?php echo GxHtml::encode(User::label(2)); ?></h1>
-
-<?php $this->widget('zii.widgets.CListView', array(
-	'dataProvider'=>$dataProvider,
-	'itemView'=>'_view',
-)); 
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-sm-4 col-md-4 sidebar">
+            <?php
+            include '_filters.php';
+            ?>
+        </div>
+        <div class="col-sm-8 col-sm-offset-4 col-md-8 col-md-offset-4 main">
+            <?php
+            include '_posts.php';
+            ?>
+        </div>  
+    </div>
+</div>

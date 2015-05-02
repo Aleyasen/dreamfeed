@@ -17,3 +17,157 @@ Stack trace:
 REQUEST_URI=/dreamfeed/index.php/site/contact
 in C:\Users\Aale\Box Sync\MotiProjects\dreamfeed\protected\controllers\SiteController.php (54)
 in C:\Users\Aale\Box Sync\MotiProjects\dreamfeed\index.php (47)
+2015/05/02 13:08:33 [error] [exception.CException] exception 'CException' with message 'Property "CWebApplication.facebook" is not defined.' in C:\Users\Aale\Box Sync\MotiProjects\yii\framework\base\CComponent.php:131
+Stack trace:
+#0 C:\Users\Aale\Box Sync\MotiProjects\yii\framework\base\CModule.php(106): CComponent->__get('facebook')
+#1 C:\Users\Aale\Box Sync\MotiProjects\dreamfeed\protected\views\user\intro.php(5): CModule->__get('facebook')
+#2 C:\Users\Aale\Box Sync\MotiProjects\yii\framework\web\CBaseController.php(127): require('C:\Users\Aale\B...')
+#3 C:\Users\Aale\Box Sync\MotiProjects\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\Users\Aale\B...', Array, true)
+#4 C:\Users\Aale\Box Sync\MotiProjects\yii\framework\web\CController.php(870): CBaseController->renderFile('C:\Users\Aale\B...', Array, true)
+#5 C:\Users\Aale\Box Sync\MotiProjects\yii\framework\web\CController.php(783): CController->renderPartial('intro', Array, true)
+#6 C:\Users\Aale\Box Sync\MotiProjects\dreamfeed\protected\controllers\UserController.php(591): CController->render('intro', Array)
+#7 C:\Users\Aale\Box Sync\MotiProjects\yii\framework\web\actions\CInlineAction.php(50): UserController->actionIntro()
+#8 C:\Users\Aale\Box Sync\MotiProjects\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#9 C:\Users\Aale\Box Sync\MotiProjects\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#10 C:\Users\Aale\Box Sync\MotiProjects\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#11 C:\Users\Aale\Box Sync\MotiProjects\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#12 C:\Users\Aale\Box Sync\MotiProjects\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#13 C:\Users\Aale\Box Sync\MotiProjects\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#14 C:\Users\Aale\Box Sync\MotiProjects\yii\framework\web\CController.php(292): CFilterChain->run()
+#15 C:\Users\Aale\Box Sync\MotiProjects\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#16 C:\Users\Aale\Box Sync\MotiProjects\yii\framework\web\CWebApplication.php(283): CController->run('intro')
+#17 C:\Users\Aale\Box Sync\MotiProjects\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('user/intro')
+#18 C:\Users\Aale\Box Sync\MotiProjects\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#19 C:\Users\Aale\Box Sync\MotiProjects\dreamfeed\index.php(47): CApplication->run()
+#20 {main}
+REQUEST_URI=/dreamfeed/index.php/user/intro
+---
+2015/05/02 13:15:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/dc.css".' in C:\Users\Aale\Box Sync\MotiProjects\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\Users\Aale\Box Sync\MotiProjects\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('css/dc.css')
+#1 C:\Users\Aale\Box Sync\MotiProjects\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Users\Aale\Box Sync\MotiProjects\dreamfeed\index.php(47): CApplication->run()
+#3 {main}
+REQUEST_URI=/dreamfeed/index.php/css/dc.css
+HTTP_REFERER=http://localhost:8080/dreamfeed/index.php/user
+---
+2015/05/02 13:15:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "img/top-black.png".' in C:\Users\Aale\Box Sync\MotiProjects\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\Users\Aale\Box Sync\MotiProjects\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('img/top-black.p...')
+#1 C:\Users\Aale\Box Sync\MotiProjects\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Users\Aale\Box Sync\MotiProjects\dreamfeed\index.php(47): CApplication->run()
+#3 {main}
+REQUEST_URI=/dreamfeed/index.php/img/top-black.png
+HTTP_REFERER=http://localhost:8080/dreamfeed/index.php/user
+---
+2015/05/02 13:15:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in C:\Users\Aale\Box Sync\MotiProjects\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\Users\Aale\Box Sync\MotiProjects\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 C:\Users\Aale\Box Sync\MotiProjects\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Users\Aale\Box Sync\MotiProjects\dreamfeed\index.php(47): CApplication->run()
+#3 {main}
+REQUEST_URI=/dreamfeed/index.php/favicon.ico
+HTTP_REFERER=http://localhost:8080/dreamfeed/index.php/user
+---
+2015/05/02 13:19:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "img/top-black.png".' in C:\Users\Aale\Box Sync\MotiProjects\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\Users\Aale\Box Sync\MotiProjects\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('img/top-black.p...')
+#1 C:\Users\Aale\Box Sync\MotiProjects\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Users\Aale\Box Sync\MotiProjects\dreamfeed\index.php(47): CApplication->run()
+#3 {main}
+REQUEST_URI=/dreamfeed/index.php/img/top-black.png
+HTTP_REFERER=http://localhost:8080/dreamfeed/index.php/user
+---
+2015/05/02 13:20:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "img/top-black.png".' in C:\Users\Aale\Box Sync\MotiProjects\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\Users\Aale\Box Sync\MotiProjects\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('img/top-black.p...')
+#1 C:\Users\Aale\Box Sync\MotiProjects\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Users\Aale\Box Sync\MotiProjects\dreamfeed\index.php(47): CApplication->run()
+#3 {main}
+REQUEST_URI=/dreamfeed/index.php/img/top-black.png
+HTTP_REFERER=http://localhost:8080/dreamfeed/index.php/user
+---
+2015/05/02 13:21:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "img/top-black.png".' in C:\Users\Aale\Box Sync\MotiProjects\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\Users\Aale\Box Sync\MotiProjects\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('img/top-black.p...')
+#1 C:\Users\Aale\Box Sync\MotiProjects\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Users\Aale\Box Sync\MotiProjects\dreamfeed\index.php(47): CApplication->run()
+#3 {main}
+REQUEST_URI=/dreamfeed/index.php/img/top-black.png
+HTTP_REFERER=http://localhost:8080/dreamfeed/index.php/user
+---
+2015/05/02 13:32:25 [error] [php] include(_posts.php): failed to open stream: No such file or directory (C:\Users\Aale\Box Sync\MotiProjects\dreamfeed\protected\views\user\index.php:10)
+Stack trace:
+#0 C:\Users\Aale\Box Sync\MotiProjects\yii\framework\web\CBaseController.php(96): UserController->renderInternal()
+#1 C:\Users\Aale\Box Sync\MotiProjects\yii\framework\web\CController.php(870): UserController->renderFile()
+#2 C:\Users\Aale\Box Sync\MotiProjects\yii\framework\web\CController.php(783): UserController->renderPartial()
+#3 C:\Users\Aale\Box Sync\MotiProjects\dreamfeed\protected\controllers\UserController.php(529): UserController->render()
+#4 C:\Users\Aale\Box Sync\MotiProjects\yii\framework\web\actions\CInlineAction.php(50): UserController->actionIndex()
+#5 C:\Users\Aale\Box Sync\MotiProjects\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#6 C:\Users\Aale\Box Sync\MotiProjects\yii\framework\web\filters\CFilterChain.php(134): UserController->runAction()
+#7 C:\Users\Aale\Box Sync\MotiProjects\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#8 C:\Users\Aale\Box Sync\MotiProjects\yii\framework\web\CController.php(1146): CAccessControlFilter->filter()
+#9 C:\Users\Aale\Box Sync\MotiProjects\yii\framework\web\filters\CInlineFilter.php(59): UserController->filterAccessControl()
+#10 C:\Users\Aale\Box Sync\MotiProjects\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#11 C:\Users\Aale\Box Sync\MotiProjects\yii\framework\web\CController.php(292): CFilterChain->run()
+#12 C:\Users\Aale\Box Sync\MotiProjects\yii\framework\web\CController.php(266): UserController->runActionWithFilters()
+#13 C:\Users\Aale\Box Sync\MotiProjects\yii\framework\web\CWebApplication.php(283): UserController->run()
+#14 C:\Users\Aale\Box Sync\MotiProjects\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#15 C:\Users\Aale\Box Sync\MotiProjects\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#16 C:\Users\Aale\Box Sync\MotiProjects\dreamfeed\index.php(47): CWebApplication->run()
+REQUEST_URI=/dreamfeed/index.php/user
+in C:\Users\Aale\Box Sync\MotiProjects\dreamfeed\protected\views\user\index.php (10)
+in C:\Users\Aale\Box Sync\MotiProjects\dreamfeed\protected\views\user\index.php (10)
+in C:\Users\Aale\Box Sync\MotiProjects\dreamfeed\protected\controllers\UserController.php (529)
+2015/05/02 13:41:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in C:\Users\Aale\Box Sync\MotiProjects\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\Users\Aale\Box Sync\MotiProjects\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 C:\Users\Aale\Box Sync\MotiProjects\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Users\Aale\Box Sync\MotiProjects\dreamfeed\index.php(47): CApplication->run()
+#3 {main}
+REQUEST_URI=/dreamfeed/index.php/favicon.ico
+HTTP_REFERER=http://localhost:8080/dreamfeed/index.php/user
+---
+2015/05/02 13:48:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in C:\Users\Aale\Box Sync\MotiProjects\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\Users\Aale\Box Sync\MotiProjects\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 C:\Users\Aale\Box Sync\MotiProjects\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Users\Aale\Box Sync\MotiProjects\dreamfeed\index.php(47): CApplication->run()
+#3 {main}
+REQUEST_URI=/dreamfeed/index.php/favicon.ico
+HTTP_REFERER=http://localhost:8080/dreamfeed/index.php/user
+---
+2015/05/02 15:13:24 [error] [php] Undefined variable: allPosts (C:\Users\Aale\Box Sync\MotiProjects\dreamfeed\protected\views\user\_posts.php:12)
+Stack trace:
+#0 C:\Users\Aale\Box Sync\MotiProjects\yii\framework\web\CBaseController.php(96): UserController->renderInternal()
+#1 C:\Users\Aale\Box Sync\MotiProjects\yii\framework\web\CController.php(870): UserController->renderFile()
+#2 C:\Users\Aale\Box Sync\MotiProjects\yii\framework\web\CController.php(783): UserController->renderPartial()
+#3 C:\Users\Aale\Box Sync\MotiProjects\dreamfeed\protected\controllers\UserController.php(529): UserController->render()
+#4 C:\Users\Aale\Box Sync\MotiProjects\yii\framework\web\actions\CInlineAction.php(50): UserController->actionIndex()
+#5 C:\Users\Aale\Box Sync\MotiProjects\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#6 C:\Users\Aale\Box Sync\MotiProjects\yii\framework\web\filters\CFilterChain.php(134): UserController->runAction()
+#7 C:\Users\Aale\Box Sync\MotiProjects\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#8 C:\Users\Aale\Box Sync\MotiProjects\yii\framework\web\CController.php(1146): CAccessControlFilter->filter()
+#9 C:\Users\Aale\Box Sync\MotiProjects\yii\framework\web\filters\CInlineFilter.php(59): UserController->filterAccessControl()
+#10 C:\Users\Aale\Box Sync\MotiProjects\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#11 C:\Users\Aale\Box Sync\MotiProjects\yii\framework\web\CController.php(292): CFilterChain->run()
+#12 C:\Users\Aale\Box Sync\MotiProjects\yii\framework\web\CController.php(266): UserController->runActionWithFilters()
+#13 C:\Users\Aale\Box Sync\MotiProjects\yii\framework\web\CWebApplication.php(283): UserController->run()
+#14 C:\Users\Aale\Box Sync\MotiProjects\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#15 C:\Users\Aale\Box Sync\MotiProjects\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#16 C:\Users\Aale\Box Sync\MotiProjects\dreamfeed\index.php(47): CWebApplication->run()
+REQUEST_URI=/dreamfeed/index.php/user
+in C:\Users\Aale\Box Sync\MotiProjects\dreamfeed\protected\views\user\_posts.php (12)
+in C:\Users\Aale\Box Sync\MotiProjects\dreamfeed\protected\views\user\index.php (10)
+in C:\Users\Aale\Box Sync\MotiProjects\dreamfeed\protected\controllers\UserController.php (529)
+2015/05/02 15:16:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "favicon.ico".' in C:\Users\Aale\Box Sync\MotiProjects\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\Users\Aale\Box Sync\MotiProjects\yii\framework\web\CController.php(271): CController->missingAction('favicon.ico')
+#1 C:\Users\Aale\Box Sync\MotiProjects\yii\framework\web\CWebApplication.php(283): CController->run('favicon.ico')
+#2 C:\Users\Aale\Box Sync\MotiProjects\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('user/favicon.ic...')
+#3 C:\Users\Aale\Box Sync\MotiProjects\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\Users\Aale\Box Sync\MotiProjects\dreamfeed\index.php(47): CApplication->run()
+#5 {main}
+REQUEST_URI=/dreamfeed/index.php/user/favicon.ico
+HTTP_REFERER=http://localhost:8080/dreamfeed/index.php/user/159
+---

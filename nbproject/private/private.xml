@@ -3,11 +3,10 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/Aale/Box%20Sync/MotiProjects/fiddler-backend/protected/controllers/APIController.php</file>
-            <file>file:/C:/Users/Aale/Box%20Sync/MotiProjects/fiddler-backend/protected/models/API.php</file>
-            <file>file:/C:/Users/Aale/Box%20Sync/MotiProjects/fiddler-backend/temp/feed_new.json</file>
-            <file>file:/C:/Users/Aale/Box%20Sync/MotiProjects/fiddler-backend/temp/feeds-old.json</file>
-            <file>file:/C:/Users/Aale/Box%20Sync/MotiProjects/fiddler-backend/protected/config/server.production.php</file>
+            <file>file:/C:/Users/Aale/Box%20Sync/MotiProjects/dreamfeed/protected/controllers/UserController.php</file>
+            <file>file:/C:/Users/Aale/Box%20Sync/MotiProjects/dreamfeed/protected/views/user/posts.php</file>
+            <file>file:/C:/Users/Aale/Box%20Sync/MotiProjects/dreamfeed/protected/views/user/_fbview.php</file>
+            <file>file:/C:/Users/Aale/Box%20Sync/MotiProjects/dreamfeed/protected/views/layouts/main.php</file>
         </group>
     </open-files>
 </project-private>

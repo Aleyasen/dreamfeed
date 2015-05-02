@@ -15,9 +15,6 @@ class UserController extends GxController {
         $this->setVar('user', NULL);
     }
 
-    
-    
-    
     public function actionLoad() {
         $this->initialize();
         $user = new User;
@@ -36,17 +33,16 @@ class UserController extends GxController {
         ));
     }
 
-    public function actionColumn($userID){//, $startTime, $endTime){
+    public function actionColumn($userID) {//, $startTime, $endTime){
         $user = User::model()->findByPK($userID);
-        
-        
+
+
         $user_json = json_encode($user->storyType());
         $this->renderPartial('columns', array(
             'user_json' => $user_json,
         ));
     }
-    
-    
+
     //***************************************************
 
     public $layout = '//layouts/main';
@@ -517,15 +513,15 @@ class UserController extends GxController {
             throw new CHttpException(400, Yii::t('app', 'Your request is invalid.'));
     }
 
-    public function actionIndex() {
-        $dataProvider = new CActiveDataProvider('User');
-        //******Do the Analysis**********
-        // User::SeentoAll();
-        // User::posts_chage();
-//        User::friends_change();
+    public function actionIndex($id) {
+        echo $id;
+        //$this->setVar('user', 13);
+        $user = User::model()->findByPK($id);
+        //echo $user->id;
+        $allPosts = new CActiveDataProvider('PostData', array('data' => $user->postDatas));
 
         $this->render('index', array(
-            'dataProvider' => $dataProvider,
+            'allPosts' => $allPosts,
         ));
     }
 
