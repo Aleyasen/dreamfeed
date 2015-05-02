@@ -1,10 +1,4 @@
-<?php
-if ($data->seen == 1)
-    $bcolor = '#DFE3EE';
-else
-    $bcolor = 'white';
-?>
-<div class="row fbpost"  style =" background-color: <?php echo $bcolor ?>">
+<div class="item row fbpost" style="border: 1px;">
     <?php // echo $data->id; ?>
     <div class="span1"><div><a href="https://facebook.com/<?php echo $data->from_id; ?>"><img src="https://graph.facebook.com/<?php echo $data->from_id; ?>/picture"></a></div></div>
     <div>
