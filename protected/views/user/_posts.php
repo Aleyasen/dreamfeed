@@ -1,5 +1,11 @@
-  
-<div id="post_container">
+<div id="sorts" class="button-group">
+    <button class="button is-checked" data-sort-by="date">date</button>
+    <button class="button" data-sort-by="sender">sender</button>
+    <button class="button" data-sort-by="type">type</button>
+    <button class="button" data-sort-by="length">length</button>
+</div>
+<br>
+<div class="isotope">
     <?php
     $this->widget('zii.widgets.CListView', array(
         'dataProvider' => $allPosts,

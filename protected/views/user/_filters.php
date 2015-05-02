@@ -20,10 +20,10 @@
         <div id="collapseOne" class="panel-collapse" role="tabpanel" aria-labelledby="headingOne">
             <div class="panel-body">
                 <div >
-                    <ul class="nav">
-                        <li><a href="">Filter1</a></li>
-                        <li><a href="">Filter2</a></li>
-                        <li><a href="">Filter3</a></li>
+                    <ul class="nav" id="filters">
+                        <li><button  data-filter=".filter1">filter1</button></li>
+                        <li><button  data-filter=".filter2">filter2</button></li>
+                        <li><button  data-filter=".filter3">filter3</button></li>
                     </ul>
                 </div>
 
